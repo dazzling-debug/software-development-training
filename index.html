@@ -1,0 +1,100 @@
+<!-- 
+    Objective: 
+    This project is designed to help you practice structuring a webpage using only HTML. 
+    The goal is to create a personal profile page that introduces who you are, shares your interests, 
+    and provides ways for people to connect with you. By using semantic elements like <header>, 
+    <section>, and <footer>, the page remains well-structured, easy to read, and meaningful. 
+
+    Case: 
+    Think of this as your digital introduction—like a friendly handshake on the internet. 
+    Whether it's for networking, job applications, or simply showcasing your personality, 
+    this page gives visitors a quick glimpse into who you are and what you're passionate about. 
+    Since it's an HTML-only project, the focus is on structuring content effectively without styling or interactivity. 
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+        section {
+            padding: 20px;
+            background: white;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 10px 0;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Profile</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="./image/image.jpeg.jpg" alt="no image">
+        <p>Hey there! I’m Suliat Kasim, an aspiring software developer passionate about learning new tech skills. I'm on a journey to explore web development, create amazing projects, and connect with like-minded people. This is just the beginning, and I'm excited to grow!</p>
+    </section>
+    
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Exploring new tech tools</li>
+            <li>Creating content and editing videos</li>
+            <li>Reading and learning about personal growth</li>
+        </ul>
+    </section>
+    
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:suliatkasim5@gmail.com">suliatkasim5@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/suliat-kasim" target="_blank">linkedin.com/in/suliat-kasim</a></p>
+    </footer>
+</body>
+</html>
+
